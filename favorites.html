@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simply Home | Favorite Properties</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+<header class="bg-primary text-white py-3">
+    <div class="container d-flex flex-column flex-lg-row justify-content-between align-items-center">
+
+        <div class="logo">
+            <img src="images/logo.png"
+                 class="img-fluid"
+                 alt="Simply Home Logo">
+        </div>
+        <h1>Simply Home</h1>
+
+       <nav>
+            <ul class="nav">
+
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="index.html">Home</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="listings.html">Listings</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="search.html">Search</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="gallery.html">Gallery</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="agents.html">Agents</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="mortgage.html">Mortgage</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link text-white active" href="favorites.html">Favorites</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="contact.html">Contact</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="about.html">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="property-form.html">Property Form</a>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<section class="container my-5">
+
+    <h2 class="text-center mb-4">
+        My Favorite Property
+    </h2>
+
+    <p class="text-center">
+        Your saved property is stored using JavaScript Local Storage.
+    </p>
+
+</section>
+
+<section class="container mb-5">
+
+    <div class="row justify-content-center">
+
+        <div class="col-lg-6">
+
+            <div class="card shadow text-center">
+
+                <img
+                id="propertyImage"
+                src="images/shrug.png"
+                class="card-img-top img-fluid placeholder-image"
+                alt="No Favorite Property">
+
+<div class="card-body text-center">
+
+    <h3 id="propertyName">
+        No Favorite Saved
+    </h3>
+
+    <p id="propertyDescription">
+        Visit the Search page and click
+        <strong>Add to Favorites</strong>.
+    </p>
+
+    <p id="recentProperty">
+        Recently Viewed: None
+    </p>
+
+    <button
+        class="btn btn-danger mt-3"
+        onclick="clearFavorite()">
+
+        Remove Favorite
+
+    </button>
+
+</div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<footer class="bg-dark text-white text-center py-4">
+
+    <h5>Simply Home</h5>
+
+    <p>(555) 123-4567</p>
+
+    <p>info@SimplyHomeRealEstate.com</p>
+
+    <p>&copy; 2026 Simply Home</p>
+
+</footer>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="search.js"></script>
+</body>
+</html>
